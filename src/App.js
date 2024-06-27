@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
-import About from "./components/about/About";
+import Whoami from "./components/whoami/Whoami";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -11,7 +11,7 @@ import {
   faReddit,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from "./components/imgs/LOGO.jpg";
+import logo from "./components/imgs/HELLSING.png";
 import "./app.css";
 
 class App extends Component {
@@ -70,7 +70,7 @@ class App extends Component {
                   </a>
                 </li>
                 <li>
-                  <NavLink to="/about">whoami</NavLink>
+                  <NavLink to="/whoami">whoami</NavLink>
                 </li>
               </ul>
             </div>
@@ -78,7 +78,7 @@ class App extends Component {
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/whoami" element={<Whoami />} />
         </Routes>
       </>
     );
