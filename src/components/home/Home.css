@@ -1,8 +1,9 @@
 .blog-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  gap: 20px;
 }
 .blog {
-  background-color: #202020;
+  background-color: #1d2021;
+  padding: 50px;
 }

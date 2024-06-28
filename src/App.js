@@ -77,7 +77,7 @@ class App extends Component {
           </nav>
         </div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
           <Route path="/whoami" element={<Whoami />} />
         </Routes>
       </>
