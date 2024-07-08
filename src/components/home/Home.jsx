@@ -11,10 +11,10 @@ class Home extends Component {
     };
     return (
       <>
-        <div className="blog-container">
-          <NavLink to="/blog">
-            {jsonData.blogs.map((blogs) => (
-              <>
+        <div className="container">
+          {jsonData.blogs.map((blogs) => (
+            <div className="blog-container">
+              <NavLink to="/blog">
                 <div className="blog" key={blogs.id}>
                   <div className="pix">
                     <img src={`./imgs/${blogs.img}`} alt="myIMG" />
@@ -23,13 +23,13 @@ class Home extends Component {
                   <p>{blogs.desc}</p>
                   <small>{blogs.date}</small>
                 </div>
-              </>
-            ))}
-          </NavLink>
-          <Routes>
-            <Route path="/blog" element={<Blog />} />
-          </Routes>
+              </NavLink>
+            </div>
+          ))}
         </div>
+        <Routes>
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
       </>
     );
   }

@@ -11,8 +11,17 @@
 }
 .logo-container h1 {
   text-shadow: 0px 0px 5px #00bcd4;
-  color: #ffffff;
+  color: #ebdbb2;
   margin: 0 50px;
+}
+@media (max-width: 500px) {
+  .logo-container h1 {
+    display: none;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 .imgs .logo {
   width: 120px;
