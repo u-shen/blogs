@@ -24,7 +24,10 @@ class Whoami extends Component {
                   <img src={myImg} alt="" srcset="" />
                 </div>
                 <button onClick={this.handleClick}>
-                  <a href="https://github.com/u-shen/whoami/blob/main/Resume.pdf">
+                  <a
+                    target="_blank"
+                    href="https://github.com/u-shen/whoami/blob/main/Resume.pdf"
+                  >
                     MY RESUME
                   </a>
                 </button>
